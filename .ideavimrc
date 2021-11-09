@@ -1,0 +1,32 @@
+let mapleader=" "
+
+set keep-english-in-normal-and-restore-in-insert
+set clipboard=unnamed
+set showmode
+
+noremap Q :action CloseContent<CR>
+
+noremap ; :
+noremap / :action Find<CR>
+noremap <leader>aa :action AceAction<CR>
+noremap <leader>at :action AceTargetAction<CR>
+
+
+noremap <leader>sl :action MoveTabRight<CR>
+noremap <leader>sj :action MoveTabDown<CR>
+noremap <leader>sk :action SplitHorizontally<CR>
+noremap <leader>sh :action SplitVertically<CR>
+noremap <leader>ss :action MoveEditorToOppositeTabGroup<CR>
+
+noremap <leader>h <C-W>h
+noremap <leader>j <C-W>j
+noremap <leader>k <C-W>k
+noremap <leader>l <C-W>l
+
+noremap <leader>cn :action CloseAllNotifications<CR>
+noremap <leader>ct :action HideAllWindows<CR>
+
+noremap <leader>wj :action NextTab<CR>
+noremap <leader>wk :action PreviousTab<CR>
+
+noremap gf :action GotoImplementation<CR>
