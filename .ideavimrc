@@ -11,7 +11,6 @@ noremap / :action Find<CR>
 noremap <leader>aa :action AceAction<CR>
 noremap <leader>at :action AceTargetAction<CR>
 
-
 noremap <leader>sl :action MoveTabRight<CR>
 noremap <leader>sj :action MoveTabDown<CR>
 noremap <leader>sk :action SplitHorizontally<CR>
@@ -23,10 +22,13 @@ noremap <leader>j <C-W>j
 noremap <leader>k <C-W>k
 noremap <leader>l <C-W>l
 
-noremap <leader>cn :action CloseAllNotifications<CR>
-noremap <leader>ct :action HideAllWindows<CR>
+noremap <leader>fj :action Android.BuildApk<CR>
+noremap <leader>fk :action Android.GenerateSignedApk<CR>
 
-noremap <leader>wj :action NextTab<CR>
-noremap <leader>wk :action PreviousTab<CR>
+noremap cn :action CloseAllNotifications<CR>
+noremap cm :action HideAllWindows<CR>
+
+noremap tj :action NextTab<CR>
+noremap tk :action PreviousTab<CR>
 
 noremap gf :action GotoImplementation<CR>
