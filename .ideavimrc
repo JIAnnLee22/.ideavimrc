@@ -4,12 +4,26 @@ set keep-english-in-normal-and-restore-in-insert
 set clipboard=unnamed
 set showmode
 
-noremap Q :action CloseContent<CR>
-
 noremap ; :
+
+noremap <leader>h <C-W>h
+noremap <leader>j <C-W>j
+noremap <leader>k <C-W>k
+noremap <leader>l <C-W>l
+
+noremap H 5h
+noremap J 5j
+noremap K 5k
+noremap L 5l
+
+noremap Q :action CloseContent<CR>
+noremap <C-S-Q> :action CloseProject<CR>
+noremap <C-S-S> :action RecentProjectListGroup<CR>
+noremap <C-A-S-Q> :action Exit<CR>
+
 noremap / :action Find<CR>
-noremap <leader>aa :action AceAction<CR>
-noremap <leader>at :action AceTargetAction<CR>
+noremap f :action AceAction<CR>
+noremap F :action AceTargetAction<CR>
 
 noremap <leader>sl :action MoveTabRight<CR>
 noremap <leader>sj :action MoveTabDown<CR>
@@ -17,16 +31,14 @@ noremap <leader>sk :action SplitHorizontally<CR>
 noremap <leader>sh :action SplitVertically<CR>
 noremap <leader>ss :action MoveEditorToOppositeTabGroup<CR>
 
-noremap <leader>h <C-W>h
-noremap <leader>j <C-W>j
-noremap <leader>k <C-W>k
-noremap <leader>l <C-W>l
-
 noremap <leader>fj :action Android.BuildApk<CR>
 noremap <leader>fk :action Android.GenerateSignedApk<CR>
+noremap <leader>fl :action Android.SyncProject<CR>
+noremap <leader>fe :action Gradle.ExecuteTask<CR>
+noremap <leader>fr :action Run<CR>
 
-noremap cn :action CloseAllNotifications<CR>
-noremap cm :action HideAllWindows<CR>
+noremap <leader>cn :action CloseAllNotifications<CR>
+noremap <leader>cm :action HideAllWindows<CR>
 
 noremap tj :action NextTab<CR>
 noremap tk :action PreviousTab<CR>
