@@ -1,6 +1,6 @@
 let mapleader=" "
 
-set keep-english-in-normal-and-restore-in-insert
+set keep-english-in-normal
 set clipboard=unnamed
 set showmode
 
