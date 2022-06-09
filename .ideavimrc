@@ -3,13 +3,20 @@ let mapleader=" "
 set keep-english-in-normal
 set clipboard=unnamed
 set showmode
+set easymotion
+set surround
+set hlsearch
+set nu
+set relativenumber
+set NERDTree
 
 noremap ; :
 
-noremap <leader>h <C-W>h
-noremap <leader>j <C-W>j
-noremap <leader>k <C-W>k
-noremap <leader>l <C-W>l
+noremap <C-H> <C-W>h
+noremap <C-J> <C-W>j
+
+noremap <C-K> <C-W>k
+noremap <C-L> <C-W>l
 
 noremap H 5h
 noremap J 5j
@@ -18,18 +25,17 @@ noremap L 5l
 
 noremap Q :action CloseContent<CR>
 noremap <C-S-Q> :action CloseProject<CR>
-noremap <C-S-S> :action RecentProjectListGroup<CR>
 noremap <C-A-S-Q> :action Exit<CR>
 
-noremap / :action Find<CR>
-noremap f :action AceAction<CR>
-noremap F :action AceTargetAction<CR>
+" Nerdtree
+noremap <C-T> :NERDTree<CR>
 
 noremap <leader>sl :action MoveTabRight<CR>
 noremap <leader>sj :action MoveTabDown<CR>
 noremap <leader>sk :action SplitHorizontally<CR>
 noremap <leader>sh :action SplitVertically<CR>
 noremap <leader>ss :action MoveEditorToOppositeTabGroup<CR>
+noremap <leader>sa :action OpenEditorInOppositeTabGroup<CR>
 
 noremap <leader>fj :action Android.BuildApk<CR>
 noremap <leader>fk :action Android.GenerateSignedApk<CR>
@@ -40,7 +46,12 @@ noremap <leader>fr :action Run<CR>
 noremap <leader>cn :action CloseAllNotifications<CR>
 noremap <leader>cm :action HideAllWindows<CR>
 
+noremap <leader>/ :action Find<CR>
+
+noremap <leader><CR> :noh<CR>
+
 noremap tj :action NextTab<CR>
 noremap tk :action PreviousTab<CR>
 
 noremap gf :action GotoImplementation<CR>
+noremap gs :action ShowUsages<CR>
